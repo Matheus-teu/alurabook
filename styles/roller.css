@@ -1,0 +1,51 @@
+hr {
+    margin: 0;
+}
+
+.roller {
+    background-color: var(--white);
+    padding: 1em;
+}
+
+.list-roller
+{
+    display: none;
+}
+
+@media screen and (min-width: 1024px){
+    .roller
+    {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .list-roller
+    {
+        display: block;
+    }
+
+    .list-roller__item
+    {
+        display: flex;
+        align-items: center;
+        margin: 0.6em 0;
+    }
+
+    .list-roller__link 
+    {
+        color: var(--gray);
+        text-decoration: none;
+        margin-left: 0.6em;
+    }
+
+    .list-roller__title
+    {
+        font-size: 14px;
+        color: var(--light-gray);
+    }
+
+    .roller__title
+    {
+        font-size: 24px;
+    }
+}
